@@ -1,0 +1,21 @@
+li{
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    font-size:20px;
+    margin-right:20px;
+    padding:10px;
+    border-radius:25px; 
+    cursor: pointer;
+    overflow:hidden;
+}
+li.active{
+    background-color: var(--colorBar);
+}
+@media all and (max-width: 600px) {
+    li{
+        font-size:15px;
+        margin-right:10px;
+        padding:2px;
+        overflow:visible;
+    }
+}

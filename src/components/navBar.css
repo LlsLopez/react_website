@@ -1,0 +1,70 @@
+
+:root{  /* change to seperate file later */
+    --navBarHeight: 60px;
+    /* Color Pallette */
+    --colorBar: #0B0C10;
+    --color1: #1F2833;
+    --color2:#3E4355;
+    --color3: #635F77;
+    --color4: #8D7C97;
+    --color5: #BC99B6;
+    --color6: #ECB8D1;
+
+    --colortext1:#007F83;
+    --colorbackup:#3E4355;
+    --colortext2: #66FCF1;
+    --colortext3: #45A29E;
+}
+.navBar{
+    position:fixed;
+    background-color: var(--colorBar);
+    width:100%;
+    height:var(--navBarHeight);
+    top: 0px;
+    z-index:2;
+    overflow: hidden;
+    
+}
+.left{
+    height: 60px;
+    overflow:hidden;
+}
+.middle{
+    font-size:calc(10px + 2vw);
+    font-weight:bold;
+}
+#icon_set1{
+    font-size:1.5vw;
+    
+}
+.right{
+    display:flex;
+}
+#menu_icon{
+    font-size:3vw;
+    cursor:pointer;
+}
+#menu_icon:hover{
+    background-color: #15161b;
+}
+#link{
+    display:block;
+    height:100%;
+}
+.wrapper{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    text-align:center;
+}
+@media all and (max-width: 600px) {
+    #menu_icon{
+        font-size:10vw;
+    }
+    #icon_set1{
+        font-size:4vw;
+    }
+    .middle{
+        font-size:25px;
+    }
+}

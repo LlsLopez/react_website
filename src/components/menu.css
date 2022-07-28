@@ -1,0 +1,42 @@
+.menu{
+    width:320px;
+    height:100%;
+    background-color: var(--colorBar);
+    position:fixed;
+    top:0;
+    right:-320px;
+    z-index:1;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    transition:all .7s ease;
+    opacity:.9;
+}
+
+.menu.active{
+    right:0;
+}
+
+
+.page{
+    text-align:center;
+    font-weight:bold;
+    font-size:35px;
+    width:min-content;
+    margin-bottom:80px;
+}
+.page :hover{
+    color:white;
+
+}
+.pages{
+    margin-top:calc(60px + 8vh);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+}
+a:link {
+    text-decoration: none;
+  }

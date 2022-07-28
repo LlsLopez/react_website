@@ -1,0 +1,99 @@
+
+.intro{
+    background-color: var(--color1);
+
+}
+
+
+
+.lastName, .title2{
+    margin-left:25px;
+}
+
+.set1{
+    margin-top:30px;
+}
+.set2{
+    margin-top:10px;
+}
+.set1, .set2{
+    font-size:80px;
+    display:flex;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    text-shadow: 4px 4px black;
+    font-weight:bold;
+}
+.splitPage1{
+    display:flex;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:20px;
+    width:90%;
+    height:60%;
+
+}
+.homeImage{
+    border-style:solid;
+    border-color:var(--colorBar);
+    width:50%;
+    justify-content: center;
+    text-align: center;
+    margin-right:20px;
+    background-image:url("https://github.com/LlsLopez/reactWebsite/blob/main/Website%20Images/Other/self_photo.jpeg?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.myInfo{
+    display:flex;
+    flex-wrap:wrap;
+    border-style:solid;
+    border-color:var(--colorBar);
+    width:50%;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--color2);
+    overflow:hidden;
+    
+}
+#infoLabel{
+font-size:40px;
+text-shadow: 3px 3px black;
+}
+#infoDescription{
+font-size:25px;
+
+}
+#newLine{
+    flex-basis:100%;
+}
+
+@media all and (max-width: 600px) {
+    .set1, .set2{
+        margin-top:0;
+        font-size:40px;
+    }
+    .splitPage1{
+        flex-direction: column;
+        margin-top:0;
+        height:88%;
+        width:100%;
+    }
+    .homeImage{
+        height:40%;
+        width:100%;
+    }
+    .myInfo{
+        height:auto;
+        width:100%;
+        overflow:visible;
+    }
+    #infoLabel{
+        font-size:30px;
+    }
+    #infoDescription{
+        font-size:25px;
+    }
+}

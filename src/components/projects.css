@@ -1,0 +1,111 @@
+*{
+}
+.projects{
+    background-color: var(--color3);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects h1{
+    font-size:50px;
+    text-shadow: 2px 2px #000000;
+    overflow:hidden;
+
+}
+.projects ul{
+    margin:10px;
+    padding:0;
+    list-style: none;
+    display: flex;
+}
+.item{
+    margin-top:10px;
+    margin-right:10px;
+    text-align:center;
+    width:400px;
+    height:250px;
+    border-radius:20px;
+    border-style:solid;
+    border-color:var(--color4);
+    border-width:3px;
+    overflow:hidden; 
+}
+.item.active{
+    width:800px;
+    height:500px;
+}
+.container{
+    overflow:hidden;
+    width:80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.projectDescription{
+    text-shadow: 2px 2px #000000;
+    margin-top:1%;
+    font-size:25px;
+    width:80%;
+    height:20%;
+    margin-left: auto;
+    margin-right:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-style:solid;
+    border-radius:50px;
+    border-color:var(--color4);
+    border-width:3px;
+    -ms-overflow-style: none;  /* For Internet Explorer 10+ Browsers */
+    scrollbar-width: none;  /* For Firefox Browser*/
+}
+.projectDescription::-webkit-scrollbar { 
+    display: none;  /* For Chrome and Safari Browsers */
+}
+#githubButton{
+    margin-top:5px;
+    padding:3px;
+    font-size:30px;
+    border-radius:20px;
+    border-style:solid;
+    border-color:var(--color4);
+    border-width:3px;
+    background-color:var(--color1);
+    color:var(--colortext1);
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+    overflow:hidden;
+}
+
+@media all and (max-width: 600px) {
+   .projects h1{
+       margin-top:0;
+       overflow:visible;
+        font-size:30px;
+    }
+    .projects ul{
+        margin-top:10px;
+        display:flex;
+        flex-wrap:wrap;
+        align-items: center;
+        height:50px;
+    }
+    .item{
+        width:138px;
+        height:auto;
+        margin:0;
+    }
+    .item.active{
+        width:100%;
+        height:auto;
+    }
+    .projectDescription{
+        font-size:20px;
+        width:100%;
+        flex-wrap:wrap;
+        border-radius:0;
+    }
+}
