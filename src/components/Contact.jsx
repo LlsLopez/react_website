@@ -12,14 +12,14 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault(); // prevent default action, refresh page
 
-    /*
+    
     emailjs.sendForm('service_tmm87yr', 'template_u4hb4xf', form.current, '5i1L4RsfQf71nK2uF')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-      */
+      
       setMessage(true);
       e.target.reset();
 

@@ -8,7 +8,7 @@
 .sections{
     width:100%;
     height: calc(100vh - var(--navBarHeight)); /* subtract navbar height */
-    background-color: purple;
+    background-color: black;
     position:relative;
     top:60px;
     scroll-behavior: smooth;
@@ -23,4 +23,10 @@
     width: 100%;
     height: calc(100vh - var(--navBarHeight));
     scroll-snap-align:start;
+}
+@media all {
+    .sections{
+        scroll-snap-type:none;
+    }
+    
 }

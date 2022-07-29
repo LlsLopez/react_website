@@ -2,8 +2,6 @@ import "./intro.css";
 import React, { useRef,useEffect } from 'react'
 import { color } from "@mui/system";
 export default function Intro() {
-
-
   // two seperate pairs (split here) will change to two sets of different colors in interval
   const ref1a = useRef(null);
   const ref2a = useRef(null);
@@ -93,10 +91,6 @@ export default function Intro() {
     </div>
 
     </div>
-
-
-
-
 
 
     </div>
